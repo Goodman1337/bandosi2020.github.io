@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>Fuckers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="test.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+<div class="background">
+<h2 class="w3-center">Показ долбаёбов</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="photo/best/best1.jpg" style="width:100%" height="600px">
+  <img class="mySlides" src="photo/best/best2.jpg" style="width:100%" height="600px">
+  <img class="mySlides" src="photo/best/best5.jpg" style="width:100%" height="600px">
+  <img class="mySlides" src="photo/best/best4.jpg" style="width:100%" height="600px">
+  <img class="mySlides" src="photo/best/2.jpg" style="width:100%" height="600px">
+  <img class="mySlides" src="photo/best/best6.jpg" style="width:100%" height="600px">
+<!-- test -->
+  <img class="mySlides" src="photo/best/10.jpg" style="width:100%" height="600px">
+  <img class="mySlides" src="photo/best/12.jpg" style="width:100%" height="600px">
+  <img class="mySlides" src="photo/best/13.jpg" style="width:100%" height="600px">
+  <img class="mySlides" src="photo/best/14.jpg" style="width:100%" height="600px">
+  <!-- test -->
+    <img class="mySlides" src="photo/best/best.jpg" style="width:100%" height="600px">
+    <img class="mySlides" src="photo/best/5.jpg" style="width:100%" height="600px">
+    <img class="mySlides" src="photo/best/4.jpg" style="width:100%" height="600px">
+    <img class="mySlides" src="photo/best/3.jpg" style="width:100%" height="600px">
+      <!-- test -->
+       <img class="mySlides" src="photo/best/6.jpg" style="width:100%" height="600px">
+       <img class="mySlides" src="photo/best/11.jpg" style="width:100%" height="600px">
+        <img class="mySlides" src="photo/best/8.jpg" style="width:100%" height="600px">
+        <img class="mySlides" src="photo/best/9.jpg" style="width:100%" height="600px">
+        <img class="mySlides" src="photo/best/7.jpg" style="width:100%" height="600px">
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+</body>
+</html>
