@@ -6,9 +6,16 @@
     color:#fff;
 
 }
-.background {
-    background-image: url(photo/background.gif);
-}
 html {
     margin:0;
+}
+header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: segoe ui;
+    background-image: url(photo/background.png);
+}
+footer {
+    background-image: url(photo/background.png);
 }
